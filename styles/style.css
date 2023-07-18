@@ -1,0 +1,31 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+}
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+.section-title {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.section-description {
+  color: #534c64;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem; /* 166.667% */
+}
