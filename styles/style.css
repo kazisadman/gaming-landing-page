@@ -4,9 +4,11 @@ html {
 
 :root {
   --primary-color: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  --secondary-color: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
 }
 h1,
 h2,
+h3,
 h4,
 p {
   margin: 0;
@@ -41,19 +43,24 @@ body {
   font-weight: 600;
   padding: 2.1rem 4rem;
   border-radius: 4.8rem;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   border: none;
 }
 
-.btn-secondary{
-    color: #fff;
+.btn-secondary {
+  color: #fff;
   font-size: 20px;
   font-weight: 600;
   padding: 2.1rem 4rem;
   border-radius: 4.8rem;
-  background: #4EC5F7;
+  background: #4ec5f7;
   border: none;
-
+}
+.gradient {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* Header section */
 /* Nav bar */
@@ -112,10 +119,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   gap: 37.4rem;
-
 }
-.banner-content{
-fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);}
+.banner-content {
+  fill: linear-gradient(
+    223deg,
+    rgba(140, 87, 238, 0.03) 0%,
+    rgba(241, 68, 174, 0.03) 100%
+  );
+}
 .banner-title {
   background: var(--primary-color);
   font-size: 9.5rem;
@@ -125,7 +136,7 @@ fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.feature-lists{
+.feature-lists {
   padding: 0;
 }
 .feature-lists li {
@@ -136,57 +147,99 @@ fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.
   margin-bottom: 1.7rem;
 }
 
-.btn-container{
+.btn-container {
   display: flex;
   gap: 2.4rem;
   margin-top: 2.4rem;
 }
 
-.banner-img img{
+.banner-img img {
   width: 100%;
   margin-top: 1.9rem;
 }
 
-@media screen and (max-width:576px) {
- nav,.nav-links,.page-links ul{
-  flex-direction: column;
- }
- nav{
-  gap: 6.2rem;
- }
- .nav-links{
-  gap: 3.6rem;
- }
- .nav-social-links{
-  margin-top: 2.6rem;
- }
-
- .banner{
-  flex-direction: column-reverse;
-  padding-top: 4.1rem;
-  gap: 0;
- }
- .banner-content{
-  padding-top:13.1rem;
-  padding-bottom:16.1rem;
- }
+/* main section */
+/* we are gamer section */
+.we-are-gamer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
 }
 
-@media screen and (min-width:576px) and (max-width:768px) {
-   nav,.nav-links,.page-links ul{
-  flex-direction: column;
- }
- nav{
-  gap: 6.2rem;
- }
- .banner{
-  flex-direction: column-reverse;
-  padding-top: 4.1rem;
-  gap: 0;
- }
- .banner-content{
-  padding-top:13.1rem;
-  padding-bottom:16.1rem;
- }
+.we-are-gamer-content {
+  max-width: 52rem;
+}
+.we-are-gamer-img img {
+  width: 100%;
+}
+.gamer-title,
+.btn-gamer {
+  margin-bottom: 2.4rem;
+}
+.gamer-des {
+  margin-bottom: 3.2rem;
+}
+.our-purpose {
+  font-size: 2.4rem;
+}
+.unleash {
+  font-size: 3.2rem;
+  color: #534c64;
+}
 
+@media screen and (max-width: 576px) {
+  nav,
+  .nav-links,
+  .page-links ul,
+  .we-are-gamer {
+    flex-direction: column;
+  }
+  nav {
+    gap: 6.2rem;
+  }
+  .nav-links {
+    gap: 3.6rem;
+  }
+  .nav-social-links {
+    margin-top: 2.6rem;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    padding-top: 4.1rem;
+    gap: 0;
+  }
+  .banner-content {
+    padding-top: 13.1rem;
+    padding-bottom: 16.1rem;
+  }
+  .we-are-gamer {
+    text-align: center;
+    padding-top: 3.6rem;
+    padding-bottom: 16.2rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  nav,
+  .nav-links,
+  .page-links ul,
+  .we-are-gamer {
+    flex-direction: column;
+  }
+  nav {
+    gap: 6.2rem;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    padding-top: 4.1rem;
+    gap: 0;
+  }
+  .banner-content {
+    padding-top: 13.1rem;
+    padding-bottom: 16.1rem;
+  }
 }
