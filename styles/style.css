@@ -7,6 +7,7 @@ html {
 }
 h1,
 h2,
+h4,
 p {
   margin: 0;
   padding: 0;
@@ -34,15 +35,39 @@ body {
   line-height: 3rem;
 }
 
+.btn-primary {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 2.1rem 4rem;
+  border-radius: 4.8rem;
+  background: var(--primary-color);
+  border: none;
+}
+
+.btn-secondary{
+    color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 2.1rem 4rem;
+  border-radius: 4.8rem;
+  background: #4EC5F7;
+  border: none;
+
+}
 /* Header section */
 /* Nav bar */
-
+.nav-container {
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 64rem;
-  margin-top: 3.7rem;
+  padding-top: 3.7rem;
+  padding-bottom: 3.7rem;
 }
 
 .logo {
@@ -58,6 +83,7 @@ nav {
   align-items: center;
   gap: 3.2rem;
   list-style: none;
+  padding: 0;
 }
 
 .page-links a {
@@ -78,4 +104,89 @@ nav {
   color: #3c354f;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+/* banner section */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 37.4rem;
+
+}
+.banner-content{
+fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);}
+.banner-title {
+  background: var(--primary-color);
+  font-size: 9.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.feature-lists{
+  padding: 0;
+}
+.feature-lists li {
+  color: #534c64;
+  font-size: 2rem;
+  font-weight: 500;
+  list-style: none;
+  margin-bottom: 1.7rem;
+}
+
+.btn-container{
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.banner-img img{
+  width: 100%;
+  margin-top: 1.9rem;
+}
+
+@media screen and (max-width:576px) {
+ nav,.nav-links,.page-links ul{
+  flex-direction: column;
+ }
+ nav{
+  gap: 6.2rem;
+ }
+ .nav-links{
+  gap: 3.6rem;
+ }
+ .nav-social-links{
+  margin-top: 2.6rem;
+ }
+
+ .banner{
+  flex-direction: column-reverse;
+  padding-top: 4.1rem;
+  gap: 0;
+ }
+ .banner-content{
+  padding-top:13.1rem;
+  padding-bottom:16.1rem;
+ }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+   nav,.nav-links,.page-links ul{
+  flex-direction: column;
+ }
+ nav{
+  gap: 6.2rem;
+ }
+ .banner{
+  flex-direction: column-reverse;
+  padding-top: 4.1rem;
+  gap: 0;
+ }
+ .banner-content{
+  padding-top:13.1rem;
+  padding-bottom:16.1rem;
+ }
+
 }
