@@ -290,7 +290,7 @@ nav {
   gap: 1.6rem;
   cursor: pointer;
   padding: 1rem;
-  background-color: transparent;
+  border: 1px solid transparent;
 }
 .game:hover {
   border-radius: 50px;
